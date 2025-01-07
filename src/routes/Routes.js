@@ -3,10 +3,10 @@ const router = express.Router();
 const peminjamanController = require("../controllers/Controller");
 
 // Router for CRUD operations
-router.post("/peminjaman", Controller.createPeminjaman);
-router.get("/peminjaman", Controller.getAllPeminjaman);
-router.get("/peminjaman", Controller.getAllPeminjamanById);
-router.put("/peminjaman", Controller.updatePeminjaman);
-router.delete("/peminjaman", Controller.deletePeminjaman);
+router.post("/peminjaman", peminjamanController.createPeminjaman);
+router.get("/peminjaman", peminjamanController.getAllPeminjaman);
+router.get("/peminjaman/:id", peminjamanController.getPeminjamanById); // Menambahkan parameter id
+router.put("/peminjaman/:id", peminjamanController.updatePeminjaman); // Menambahkan parameter id
+router.delete("/peminjaman/:id", peminjamanController.deletePeminjaman); // Menambahkan parameter id
 
 module.exports = router;

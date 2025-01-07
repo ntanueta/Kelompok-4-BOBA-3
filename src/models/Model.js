@@ -14,7 +14,7 @@ exports.getAllPeminjaman = (callback) => {
 };
 
 // Get a single peminjaman record by ID
-exports.getAllPeminjamanById = (id, callback) => {
+exports.getPeminjamanById = (id, callback) => {
     const query = "SELECT * FROM peminjaman WHERE id = ?";
     db.query(query, [id], callback);
 };
@@ -23,7 +23,7 @@ exports.getAllPeminjamanById = (id, callback) => {
 exports.updatePeminjaman = (id, data, callback) => {
     const query = `
         UPDATE peminjaman
-        SET nama_buku = ?, nama_peminjam = ?, tanggal_peminjaman = ?, tanggal_pengembalian = ?, status = ?
+        SET nama_buku = ?, nama_peminjam = ?, tanggal_meminjam = ?, tanggal_pengembalian = ?, status = ?
         WHERE id = ?
     `;
     const values = [data.nama_buku, data.nama_peminjam, data.tanggal_meminjam, data.tanggal_pengembalian, data.status, id];
