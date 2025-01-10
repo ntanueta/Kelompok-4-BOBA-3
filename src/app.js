@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const Routes = require("./routes/Routes");
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,6 +12,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use("/api", Routes);
+app.use('/api/auth', authRoutes);
 
 // Start server
 app.listen(port, () => {
