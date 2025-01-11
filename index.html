@@ -3,18 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Website Kelompok 4</title>
+    <title>BukuPedia</title>
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- bootsrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- aos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
    <!-- css tambahan -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font roboto & playair display -->
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar  navbar-expand-lg bg-dark fixed-top shadow" data-bs-theme="dark">
+    <nav class="navbar  navbar-expand-lg fixed-top shadow" >
       <div class="container">
-        <a class="navbar-brand fs-4 fw-bold" href="#">Kelompok 4</a>
+        <a class="navbar-brand fs-4 fw-bold" href="#">BukuPedia</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,11 +34,11 @@
               <a class="nav-link fw-bold" href="#aktivitas">Aktivitas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="#kontak">Panduan</a>
+              <a class="nav-link fw-bold" href="#panduan">Panduan</a>
             </li>
           </ul>
           <div class="d-flex gap-2">
-            <a class="btn btn-outline-light btn-sm" href="login">Masuk</a>
+            <a class="btn btn-outline-dark btn-sm" href="login">Masuk</a>
             <a class="btn btn-primary btn-sm" href="register">Daftar</a>
           </div>
         </div>
@@ -66,68 +70,166 @@
           </button>
         </div>
       </div>
-      <div class="container ">
+      <div class="container text-center">
         <h1>Pinjam buku gak perlu ribet</h1>
         <p>pilih buku favoritmu dan pinjam sekarang.</p>
-        <a href="#koleksi" class="btn btn-primary btn-lg">Jelajahi &rarr;</a>
+        <a href="#mulai" class="btn btn-primary btn-lg">Jelajahi &rarr;</a>
       </div>
     </section>
     <!-- hero section end -->
-
+    <section id="mulai" class="container my-6 ">
+      <h3 class="section-title text-center" data-aos="fade-down">Kenapa BukuPedia ?</h3>
+      <div class="row gy-2 align-items-center">
+        <div class="col-md-4" >
+          <div class="box" data-aos="flip-down">
+            <i class="fas fa-mobile-alt"></i>
+            <h5>Praktis</h5>
+            <p>Akses dari mana saja dan kapan saja.</p>
+          </div>
+        </div>
+        <div class="col-md-4" >
+          <div class="box" data-aos="flip-down">
+            <i class="fas fa-book"></i>
+            <h5>Koleksi Lengkap</h5>
+            <p>Pilihan buku terbaik di ujung jari Anda.</p>
+          </div>
+        </div>
+        <div class="col-md-4" >
+           <div class="box" data-aos="flip-down">
+             <i class="fas fa-lightbulb"></i>
+             <h5>Fitur Inovatif</h5>
+             <p>Pinjam buku dengan teknologi modern.</p>
+            </div>
+        </div>
+      </div>
+    </section>
     <!-- katalog section strat -->   
       <section id="koleksi" class="container py-3">
         <h3 class="text-center my-5" data-aos="fade-down">koleksi kami</h3>
-        <div class="row">
-          <div class="col-md-3 mb-3" data-aos="zoom-in">
-            <div class="card shadow">
+        <div id="row-buku" class="row g-4 hight-row">
+      
+          <!-- dummy card books -->
+
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
               <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <p class="card-penulis fw-light">James clear</p>
                 <h5 class="card-title">Atomic Habit</h5>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-primary">Lihat detail</a>
-                  <a href="#" class="btn btn-success">Pinjam buku</a>
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3" data-aos="zoom-in">
-            <div class="card shadow">
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
               <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <p class="card-penulis fw-light">James clear</p>
                 <h5 class="card-title">Atomic Habit</h5>
-                <a href="#" class="btn btn-primary">Lihat detail</a>
+                <div class="card-footer">
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3" data-aos="zoom-in">
-            <div class="card shadow">
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
               <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <p class="card-penulis fw-light">James clear</p>
                 <h5 class="card-title">Atomic Habit</h5>
-                <a href="#" class="btn btn-primary">Lihat detail</a>
+                <div class="card-footer">
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3" data-aos="zoom-in">
-            <div class="card shadow">
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
               <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
               <div class="card-body text-center">
                 <p class="card-penulis fw-light">James clear</p>
                 <h5 class="card-title">Atomic Habit</h5>
-                <a href="#" class="btn btn-primary">Lihat detail</a>
+                <div class="card-footer">
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
+                </div>
               </div>
             </div>
           </div>
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
+              <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="card-penulis fw-light">James clear</p>
+                <h5 class="card-title">Atomic Habit</h5>
+                <div class="card-footer">
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
+              <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="card-penulis fw-light">James clear</p>
+                <h5 class="card-title">Atomic Habit</h5>
+                <div class="card-footer">
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
+              <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="card-penulis fw-light">James clear</p>
+                <h5 class="card-title">Atomic Habit</h5>
+                <div class="card-footer">
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
+              <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="card-penulis fw-light">James clear</p>
+                <h5 class="card-title">Atomic Habit</h5>
+                <div class="card-footer">
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6" data-aos="zoom-in">
+            <div class="card h-100 shadow">
+              <img src="https://yapindo-cdn.b-cdn.net/testing/digital-book/15/1728027042616.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <p class="card-penulis fw-light">James clear</p>
+                <h5 class="card-title">Atomic Habit</h5>
+                <div class="card-footer">
+                  <a href="detail.html" class="btn btn-primary">Lihat detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+
+        </div>
+        <div class="text-center mt-4">
+          <a href="buku.html">Lihat Lebih Banyak &raquo;</a>
         </div>
       </section>
     <!-- katalog section end -->
      <!-- aktivitas -->
      <div id="aktivitas" class="container">
       <h2 class="text-center my-5" data-aos="fade-down">aktivitas</h2>
-      <div class="row text-center p-3 bg-secondary bg-opacity-10">
+      <div class="row text-center p-3 ">
           <div class="col-md-3">
               <div class="counter-box colored rounded-3 " data-aos="flip-left"> <i class="Total Koleksi"></i> <span class="counter">500</span>
                   <p>Total Koleksi</p>
@@ -150,47 +252,91 @@
           </div>
       </div>
   </div>
-     <!-- Footer -->
-<footer id="Kontak" class="bg-dark text-center text-white mt-5">
-  <div class="container py-4">
-      <div class="row">
-          <div class="col-md-4 mb-4">
-              <h5>Kelompok4</h5>
-              <p>"Perpustakaan Digital di Ujung Jari Anda."PustakaOnline adalah tempat bacaan favorit Anda. Pinjam buku kapan saja, di mana saja, tanpa perlu keluar rumah. Ribuan judul menarik menanti untuk dieksplorasi.</p>
-          </div>
-          <div class="col-md-4 mb-4">
-              <h5>Navigasi</h5>
-              <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Beranda</a></li>
-                  <li><a href="#koleksi" class="text-white">Katalog</a></li>
-                  <li><a href="#aktivitas" class="text-white">Aktivitas</a></li>
-                  <li><a href="#" class="text-white">Kontak</a></li>
-              </ul>
-          </div>
-          <div class="col-md-4 mb-4">
-            <h5>Ikuti Kami</h5>
-            <ul class="list-unstyled text-align-left">
-                <li><a href="#" class="text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="#" class="text-white"><i class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a href="#" class="text-white"><i class="fab fa-tiktok"></i> TikTok</a></li>
-                <li><a href="#" class="text-white"><i class="fab fa-youtube"></i> YouTube</a></li>
-            </ul>
+  <section id="panduan" class="container my-5 vintage-section">
+    <h3 class="section-title text-center" data-aos="fade-down">Panduan Peminjaman Buku</h3>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="box" data-aos="flip-up" >
+          <i class="fas fa-user"></i>
+          <h5>Langkah 1</h5>
+          <p>Daftar atau masuk ke akun Anda.</p>
         </div>
-        
       </div>
-      <div class=" text-center py-3">
-          &copy; 2025 Perpustakaan Kami. All Rights Reserved.
+      <div class="col-md-6">
+        <div class="box" data-aos="flip-up">
+          <i class="fas fa-search"></i>
+          <h5>Langkah 2</h5>
+          <p>Pilih buku favorit Anda dari katalog.</p>
+        </div>
       </div>
-  </div>
-</footer>
-    <!-- js bootraps -->
+      <div class="col-md-6">
+        <div class="box" data-aos="flip-up">
+          <i class="fas fa-hand-pointer"></i>
+          <h5>Langkah 3</h5>
+          <p>Klik tombol "detail",lalu"Pinjam" dan ikuti petunjuk.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box" data-aos="flip-up">
+          <i class="fas fa-hand-holding"></i>
+          <h5>Langkah 4</h5>
+          <p>Ambil buku di lokasi sesuai jadwal yang ditentukan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+     <!-- Footer -->
+     <footer id="Kontak" class=" text-center text-lg-start  mt-5">
+      <div class="container py-4">
+          <div class="row">
+              <div class="col-md-3 mb-4">
+                  <h5 class="text-white">BukuPedia</h5>
+                  <p>"Perpustakaan Digital di Ujung Jari Anda."
+                  PustakaOnline adalah tempat bacaan favorit Anda.
+                  Pinjam buku kapan saja, di mana saja, tanpa perlu keluar rumah. Ribuan judul menarik menanti untuk dieksplorasi.</p>
+              </div>
+              <div class="col-md-3 mb-4">
+                  <h5 class="text-white">Navigasi</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white text-decoration-none">Beranda</a></li>
+                      <li><a href="#koleksi" class="text-white text-decoration-none">Katalog</a></li>
+                      <li><a href="#aktivitas" class="text-white text-decoration-none">Aktivitas</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Kontak</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 mb-4">
+                <h5 class="text-white">Ikuti Kami</h5>
+                <ul class="list-unstyled text-align-left">
+                    <li><a href="#" class="text-white text-decoration-none"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" class="text-white text-decoration-none "><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" class="text-white text-decoration-none"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                    <li><a href="#" class="text-white text-decoration-none"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+              <h5 class="text-white">Kontak</h5>
+              <p><i class="fas fa-home mr-3"></i> Bandung, Jawa Barat, Indonesia</p>
+              <p><i class="fas fa-envelope mr-3"></i> KELOMPOK4@BukuPedia.com</p>
+              <p><i class="fas fa-phone mr-3"></i>Phone : + 62 8982 5898</p>
+          </div>            
+          </div>
+        </div>   
+          <div class="bg-dark text-center py-3">
+            &copy; 2025 Perpustakaan Kami. All Rights Reserved.
+        </div>
+    </footer>
+    <!--bootraps -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- js aos -->
+    <!--aos -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init();
       </script>
-      <!-- Js count -->
+    <!-- axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- main -->
+     <!-- <script src="assets/backupmain.js"></script> -->
+      <!-- Jquery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
       <script>
         $(document).ready(function() {  
